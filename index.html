@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jatin Joshi — Web Developer & App Developer based in Pune, India. Specializing in high-performance frontend engineering, interactive web design, and modern scalable web applications."
+    />
+    <meta
+      name="keywords"
+      content="Jatin Joshi, Web Developer, App Developer, Frontend Engineer, React, Next.js, UI/UX Designer, Pune, Portfolio"
+    />
+    <meta name="author" content="Jatin Joshi" />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="canonical" href="https://jj-portfolio-website.netlify.app/" />
+
+    <title>Jatin Joshi JJ - Portfolio Website</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Body & UI) & Bebas Neue / Syne (Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       PURE CSS DUAL-THEME ENGINE (Checkbox Hack)
+       Checked = Dark Mode ("Crimson Noir") | Unchecked = Light Mode ("Warm Editorial")
+       ============================================================ -->
+    <input
+      type="checkbox"
+      id="theme-toggle"
+      class="theme-checkbox"
+      checked
+      hidden
+    />
+
+    <!-- Root Page Wrapper controlled by Theme Selector -->
+    <div class="page-container">
+      <!-- Ambient Glowing Orbs / Gradient Lighting -->
+      <div class="ambient-glow glow-top" aria-hidden="true"></div>
+      <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+      <!-- ============================================================
+         RESPONSIVE NAVIGATION BAR (Semantic <header> & <nav>)
+         ============================================================ -->
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Primary Navigation">
+          <div class="nav-wrapper">
+            <!-- Brand Monogram Logo -->
+            <a href="#home" class="brand-logo" aria-label="Jatin Joshi Home">
+              <span class="monogram-box">JJ</span>
+              <span class="brand-text">JATIN JOSHI</span>
+            </a>
+
+            <!-- Pure CSS Mobile Menu Trigger Checkbox -->
+            <input
+              type="checkbox"
+              id="nav-toggle"
+              class="nav-toggle-checkbox"
+              hidden
+            />
+
+            <!-- Navigation Links Directory -->
+            <ul class="nav-links">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#experience" class="nav-link">Education</a></li>
+              <li><a href="#process" class="nav-link">Process</a></li>
+              <li><a href="#achievements" class="nav-link">Certificates</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Nav Right Cluster: Theme Switcher & Mobile Hamburger -->
+            <div class="nav-actions">
+              <!-- Accessible Pure-CSS Theme Toggle Switch -->
+              <label
+                for="theme-toggle"
+                class="theme-switch"
+                title="Toggle Light / Dark Mode"
+                aria-label="Toggle visual theme"
+              >
+                <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+                <span class="theme-slider"></span>
+                <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+              </label>
+
+              <!-- Let's Talk Desktop CTA -->
+              <a href="#contact" class="nav-cta-btn">Let's Talk &rarr;</a>
+
+              <!-- Pure CSS Hamburger-to-Cross (X) Trigger -->
+              <label
+                for="nav-toggle"
+                class="hamburger-toggle"
+                aria-label="Open Navigation Menu"
+              >
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ============================================================
+           1. HERO SECTION
+           ============================================================ -->
+        <section class="hero-section" id="home">
+          <!-- Background Editorial Watermark for Dark Mode -->
+          <span class="hero-watermark" aria-hidden="true">PORTFOLIO</span>
+
+          <div class="container hero-grid">
+            <!-- Hero Text Details -->
+            <div class="hero-text-content">
+              <div class="hero-tag-wrap">
+                <span class="status-indicator"></span>
+                <span class="hero-tag-text">AVAILABLE FOR OPPORTUNITIES</span>
+              </div>
+
+              <p class="hero-salutation">Hello, I'm</p>
+              <h1 class="hero-name">Jatin Joshi</h1>
+              <p class="hero-role-title">Web Developer & App Developer</p>
+
+              <p class="hero-description">
+                Passionate developer specializing in building modern,
+                interactive, and high-performance web experiences. Proficient in
+                React, Next.js, and advanced creative UI styling with a
+                relentless focus on clean code, responsiveness, and seamless
+                user interaction.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                  View My Work
+                  <span class="btn-arrow">&rarr;</span>
+                </a>
+                <a
+                  href="https://jj-portfolio-website.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  Live Portfolio Link
+                </a>
+              </div>
+
+              <!-- Quick Metrics / Statistics Matrix -->
+              <div class="hero-metrics">
+                <div class="metric-card">
+                  <span class="metric-number">05+</span>
+                  <span class="metric-label">Full Projects</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-number">12+</span>
+                  <span class="metric-label">Modern Tech Stacks</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-number">08+</span>
+                  <span class="metric-label">Certifications</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Portrait & Availability Card -->
+            <div class="hero-visual-wrapper">
+              <div class="portrait-container">
+                <div class="portrait-orbit-ring" aria-hidden="true"></div>
+                <figure class="portrait-figure">
+                  <img
+                    src="/assets/images/JatinJoshiJJ.avif"
+                    alt="Portrait of Jatin Joshi, Web and App Developer"
+                    class="portrait-img"
+                    width="360"
+                    height="360"
+                  />
+                  <figcaption class="sr-only">
+                    Jatin Joshi - Web and App Developer based in Pune
+                  </figcaption>
+                </figure>
+
+                <!-- Floating Glass Availability Pill Card -->
+                <aside class="floating-availability-card">
+                  <div class="avail-badge">
+                    <span class="avail-dot"></span>
+                    <span>Open for Projects</span>
+                  </div>
+                  <p class="avail-text">Based in Pune, Maharashtra, India</p>
+                  <a href="#contact" class="avail-action"
+                    >Get in Touch &rarr;</a
+                  >
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           2. ABOUT ME SECTION
+           ============================================================ -->
+        <section class="section about-section" id="about">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">BIOGRAPHY & VALUES</span>
+              <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+              <article class="about-main-card glass-panel">
+                <h3 class="about-headline">
+                  Bridging Creative UI Design with Clean Engineering
+                </h3>
+                <p>
+                  I am a web and app developer with a solid foundation in
+                  frontend engineering, backend integrations, and crafting
+                  animation-rich digital applications. My core expertise centers
+                  around modern JavaScript, React.js, Next.js, and building
+                  design-system compliant interfaces.
+                </p>
+                <p>
+                  With a background in Computer Applications (BBA-CA) from
+                  Choice College in Pune, I combine structured analytical
+                  problem-solving with creative frontend development. Whether
+                  designing responsive layout architectures, optimizing render
+                  cycles, or integrating AI-driven workflows, I approach every
+                  project from first principles.
+                </p>
+                <div class="about-quick-specs">
+                  <div class="spec-item">
+                    <span class="spec-title">Location:</span>
+                    <span class="spec-value">Pune, Maharashtra, India</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-title">Email:</span>
+                    <span class="spec-value">jatin20051112@gmail.com</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-title">Core Passion:</span>
+                    <span class="spec-value"
+                      >Modern Web Apps, Creative UI & AI Tooling</span
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <!-- Working Philosophy Card -->
+              <aside class="about-philosophy-card glass-panel">
+                <div class="philosophy-icon" aria-hidden="true">💡</div>
+                <h3 class="philosophy-title">My Development Philosophy</h3>
+                <blockquote class="philosophy-quote">
+                  “Great digital experiences live at the intersection of
+                  pixel-level aesthetic precision, accessible semantic markup,
+                  and zero-compromise performance.”
+                </blockquote>
+                <ul class="philosophy-list">
+                  <li>✨ Semantic, accessible HTML5 structure</li>
+                  <li>⚡ Performance-first CSS layout systems</li>
+                  <li>📱 Pixel-perfect responsiveness across all devices</li>
+                  <li>🛠️ Scalable, modular, and reusable code organization</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           3. SKILLS SECTION
+           ============================================================ -->
+        <section class="section skills-section" id="skills">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">TECHNICAL EXPERTISE</span>
+              <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+              <!-- Category 1: Frontend -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">💻</span>
+                  <h3 class="cat-title">Frontend Core</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">HTML5</li>
+                  <li class="skill-pill">CSS3</li>
+                  <li class="skill-pill">JavaScript (ES6+)</li>
+                  <li class="skill-pill">React.js</li>
+                  <li class="skill-pill">Next.js</li>
+                  <li class="skill-pill">TypeScript</li>
+                </ul>
+              </article>
+
+              <!-- Category 2: Styling & UI Frameworks -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">🎨</span>
+                  <h3 class="cat-title">UI & Styling</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">Tailwind CSS</li>
+                  <li class="skill-pill">Bootstrap</li>
+                  <li class="skill-pill">Skiper UI</li>
+                  <li class="skill-pill">CSS Grid & Flexbox</li>
+                  <li class="skill-pill">Responsive Design</li>
+                </ul>
+              </article>
+
+              <!-- Category 3: Animations & Creative 3D -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">✨</span>
+                  <h3 class="cat-title">Animation & Creative</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">GSAP</li>
+                  <li class="skill-pill">ScrollTrigger</li>
+                  <li class="skill-pill">Framer Motion</li>
+                  <li class="skill-pill">Three.js</li>
+                  <li class="skill-pill">Spline 3D</li>
+                  <li class="skill-pill">Lenis Scroll</li>
+                </ul>
+              </article>
+
+              <!-- Category 4: App & Backend Fundamentals -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">⚙️</span>
+                  <h3 class="cat-title">App & Backend</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">React Native</li>
+                  <li class="skill-pill">PWA (Progressive Web Apps)</li>
+                  <li class="skill-pill">Node.js</li>
+                  <li class="skill-pill">Express.js</li>
+                  <li class="skill-pill">REST APIs</li>
+                  <li class="skill-pill">SQL Fundamentals</li>
+                </ul>
+              </article>
+
+              <!-- Category 5: AI & Modern Development -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">🤖</span>
+                  <h3 class="cat-title">AI & Tooling</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">Prompt Engineering</li>
+                  <li class="skill-pill">Google AI Studio</li>
+                  <li class="skill-pill">Vibe Coding</li>
+                  <li class="skill-pill">OpenRouter AI</li>
+                  <li class="skill-pill">Postman</li>
+                </ul>
+              </article>
+
+              <!-- Category 6: DevOps & Deployment -->
+              <article class="skill-category-card glass-panel">
+                <div class="skill-cat-header">
+                  <span class="cat-icon" aria-hidden="true">🚀</span>
+                  <h3 class="cat-title">DevOps & Tools</h3>
+                </div>
+                <ul class="skill-pills">
+                  <li class="skill-pill">Git & GitHub</li>
+                  <li class="skill-pill">Docker</li>
+                  <li class="skill-pill">Kubernetes</li>
+                  <li class="skill-pill">Netlify</li>
+                  <li class="skill-pill">NPM Package Registry</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           4. PROJECTS SHOWCASE
+           ============================================================ -->
+        <section class="section projects-section" id="projects">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">FEATURED CREATIONS</span>
+              <h2 class="section-title">Selected Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+              <!-- Project 1: NEXOGEN Agency -->
+              <article class="project-card glass-panel">
+                <div class="project-media-wrap">
+                  <img
+                    src="/assets/images/NEXOGEN Digital Agency Platform interface preview.avif"
+                    alt="NEXOGEN Digital Agency Platform interface preview"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                  <span class="project-cat-pill">Full-Stack SaaS</span>
+                </div>
+                <div class="project-info">
+                  <div class="project-header-row">
+                    <span class="project-number">01</span>
+                    <h3 class="project-title">
+                      NEXOGEN — The Next Gen Design Agency
+                    </h3>
+                  </div>
+                  <p class="project-desc">
+                    An AI-powered agency platform with Nova AI chatbot, CRM-lite
+                    ticket workflows, Three.js 3D hero components, and
+                    Awwwards-inspired GSAP animations.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>Next.js</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://nexogen-thenextgendesignagency.netlify.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      Live Demo &rarr;
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2: NEXOGEN AI Code Editor -->
+              <article class="project-card glass-panel">
+                <div class="project-media-wrap">
+                  <img
+                    src="/assets/images/NEXOGEN AI Code Editor application preview.avif"
+                    alt="NEXOGEN AI Code Editor application preview"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                  <span class="project-cat-pill">Desktop & Web PWA</span>
+                </div>
+                <div class="project-info">
+                  <div class="project-header-row">
+                    <span class="project-number">02</span>
+                    <h3 class="project-title">NEXOGEN AI Code Editor</h3>
+                  </div>
+                  <p class="project-desc">
+                    Multi-language sandboxed code editor with integrated
+                    real-time HTML/CSS/JS preview, Electron packaging, SQLite
+                    decision logging, and offline execution capabilities.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>React.js</li>
+                    <li>Electron</li>
+                    <li>Node.js</li>
+                    <li>SQLite</li>
+                    <li>WebSockets</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://nexogen-code-editor.netlify.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      Live Demo &rarr;
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3: NEXOGEN AI Mock Interview -->
+              <article class="project-card glass-panel">
+                <div class="project-media-wrap">
+                  <img
+                    src="/assets/images/AI Mock Interview Platform dashboard preview.avif"
+                    alt="AI Mock Interview Platform dashboard preview"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                  <span class="project-cat-pill">AI Platform</span>
+                </div>
+                <div class="project-info">
+                  <div class="project-header-row">
+                    <span class="project-number">03</span>
+                    <h3 class="project-title">
+                      NEXOGEN AI — Mock Interview Platform
+                    </h3>
+                  </div>
+                  <p class="project-desc">
+                    Interactive AI-driven interview preparation web app with
+                    structured candidate evaluations, voice integration
+                    pipelines, and responsive real-time feedback dashboards.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>AI APIs</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://nexogen-webapp.netlify.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      Live Demo &rarr;
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 4: SCSDB Movie & Series Discovery -->
+              <article class="project-card glass-panel">
+                <div class="project-media-wrap">
+                  <img
+                    src="/assets/images/SCSDB Movie Recommendation app preview.avif"
+                    alt="SCSDB Movie Recommendation app preview"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                  <span class="project-cat-pill">Entertainment API</span>
+                </div>
+                <div class="project-info">
+                  <div class="project-header-row">
+                    <span class="project-number">04</span>
+                    <h3 class="project-title">
+                      SCSDB Movie & Series Recommendation
+                    </h3>
+                  </div>
+                  <p class="project-desc">
+                    Discovery platform aggregating movie trailers, cast
+                    profiles, IMDb ratings, and streaming service platform
+                    availability for dynamic recommendations.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>React.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>TMDB API</li>
+                    <li>Axios</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://scsdb-jj.netlify.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      Live Demo &rarr;
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 5: NEXOGEN UI Component Library -->
+              <article class="project-card glass-panel">
+                <div class="project-media-wrap">
+                  <img
+                    src="/assets/images/nexogen-ui-library npm package documentation preview.avif"
+                    alt="nexogen-ui-library npm package documentation preview"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                  <span class="project-cat-pill">Open Source NPM</span>
+                </div>
+                <div class="project-info">
+                  <div class="project-header-row">
+                    <span class="project-number">05</span>
+                    <h3 class="project-title">
+                      nexogen-ui-library (NPM Package)
+                    </h3>
+                  </div>
+                  <p class="project-desc">
+                    An installable npm component package containing reusable UI
+                    elements (buttons, navbars, animated cards) optimized for
+                    modern React & Tailwind web applications.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>React.js</li>
+                    <li>NPM</li>
+                    <li>GSAP</li>
+                    <li>CSS3</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      View on GitHub &rarr;
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           5. EDUCATION & EXPERIENCE
+           ============================================================ -->
+        <section class="section edu-section" id="experience">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">BACKGROUND & ACADEMICS</span>
+              <h2 class="section-title">Education & Milestones</h2>
+            </div>
+
+            <div class="edu-grid">
+              <!-- Timeline Item 1: BBA CA -->
+              <article class="timeline-step glass-panel">
+                <div class="step-meta">
+                  <span class="step-badge">2023 — 2026</span>
+                  <span class="step-grade">CGPA 7.80 / 10 • Grade A</span>
+                </div>
+                <h3 class="step-degree">BBA (Computer Applications)</h3>
+                <p class="step-institute">
+                  Choice College of Arts and Commerce / Synergy School of
+                  Commerce, Pune
+                </p>
+                <p class="step-description">
+                  Comprehensive study of software engineering principles, web
+                  architectures, database management, and core business systems
+                  applications.
+                </p>
+              </article>
+
+              <!-- Timeline Item 2: HSC Commerce -->
+              <article class="timeline-step glass-panel">
+                <div class="step-meta">
+                  <span class="step-badge">2021 — 2023</span>
+                  <span class="step-grade">87.50% • Class Topper</span>
+                </div>
+                <h3 class="step-degree">
+                  Higher Secondary Certificate (HSC Commerce)
+                </h3>
+                <p class="step-institute">Prestige Public School, Pune</p>
+                <p class="step-description">
+                  Focused on analytical mathematics, commercial business
+                  structures, and computer foundations. Secured rank as the
+                  class topper.
+                </p>
+              </article>
+
+              <!-- Timeline Item 3: SSC -->
+              <article class="timeline-step glass-panel">
+                <div class="step-meta">
+                  <span class="step-badge">2020 — 2021</span>
+                  <span class="step-grade">85.60% • Class Topper</span>
+                </div>
+                <h3 class="step-degree">Secondary School Certificate (SSC)</h3>
+                <p class="step-institute">
+                  Aruna Chaudhary Madhyamic Vidyalaya, Pune
+                </p>
+                <p class="step-description">
+                  Foundational schooling with high distinction in Mathematics
+                  and Science, achieving first position in class.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           6. WORK PROCESS SECTION
+           ============================================================ -->
+        <section class="section process-section" id="process">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">METHODOLOGY</span>
+              <h2 class="section-title">How I Build Websites</h2>
+            </div>
+
+            <div class="process-flow">
+              <article class="process-node glass-panel">
+                <span class="node-num">01</span>
+                <h3 class="node-title">Discover</h3>
+                <p class="node-text">
+                  Understanding the core problem, user persona, business
+                  objectives, and functional technical requirements.
+                </p>
+              </article>
+
+              <article class="process-node glass-panel">
+                <span class="node-num">02</span>
+                <h3 class="node-title">Plan</h3>
+                <p class="node-text">
+                  Architecting semantic content structure, selecting optimal
+                  tech stacks, and organizing design tokens.
+                </p>
+              </article>
+
+              <article class="process-node glass-panel">
+                <span class="node-num">03</span>
+                <h3 class="node-title">Design</h3>
+                <p class="node-text">
+                  Defining color systems, glassmorphism surfaces, responsive
+                  typography, and micro-interaction states.
+                </p>
+              </article>
+
+              <article class="process-node glass-panel">
+                <span class="node-num">04</span>
+                <h3 class="node-title">Develop</h3>
+                <p class="node-text">
+                  Writing standards-compliant HTML5 markup and modern CSS3
+                  layouts with zero layout shifts.
+                </p>
+              </article>
+
+              <article class="process-node glass-panel">
+                <span class="node-num">05</span>
+                <h3 class="node-title">Deliver</h3>
+                <p class="node-text">
+                  Auditing accessibility, testing viewport breakpoints,
+                  optimizing SEO metadata, and deploying to production.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           7. HOBBIES & INTERESTS
+           ============================================================ -->
+        <section class="section hobbies-section">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">BEYOND CODE</span>
+              <h2 class="section-title">Interests & Pursuits</h2>
+            </div>
+
+            <div class="hobbies-grid">
+              <div class="hobby-card glass-panel">
+                <span class="hobby-icon" aria-hidden="true">💻</span>
+                <h3 class="hobby-name">Creative Coding</h3>
+                <p class="hobby-desc">
+                  Exploring canvas, shaders, and UI animations that feel tactile
+                  and responsive.
+                </p>
+              </div>
+              <div class="hobby-card glass-panel">
+                <span class="hobby-icon" aria-hidden="true">🎨</span>
+                <h3 class="hobby-name">UI/UX Crafting</h3>
+                <p class="hobby-desc">
+                  Experimenting with modern dark/light editorial themes and
+                  fluid typography.
+                </p>
+              </div>
+              <div class="hobby-card glass-panel">
+                <span class="hobby-icon" aria-hidden="true">🚀</span>
+                <h3 class="hobby-name">Next-Gen AI Tech</h3>
+                <p class="hobby-desc">
+                  Following frontier LLMs, vibe coding methodologies, and AI
+                  developer workflows.
+                </p>
+              </div>
+              <div class="hobby-card glass-panel">
+                <span class="hobby-icon" aria-hidden="true">📚</span>
+                <h3 class="hobby-name">Continuous Learning</h3>
+                <p class="hobby-desc">
+                  Reading engineering documentation, MDN specifications, and
+                  architecture blogs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           8. ACHIEVEMENTS & CERTIFICATIONS
+           ============================================================ -->
+        <section class="section cert-section" id="achievements">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">CREDENTIALS & HONORS</span>
+              <h2 class="section-title">Verified Certifications</h2>
+            </div>
+
+            <div class="cert-grid">
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Professional</span>
+                <h3 class="cert-title">Web Development Course</h3>
+                <p class="cert-issuer">STP Computer Education</p>
+                <p class="cert-desc">
+                  HTML5, CSS3, JavaScript web fundamentals and hands-on
+                  responsive application design.
+                </p>
+              </article>
+
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Front-End</span>
+                <h3 class="cert-title">
+                  Introduction to Front-End Development
+                </h3>
+                <p class="cert-issuer">SkillUp by Simplilearn</p>
+                <p class="cert-desc">
+                  Modern frontend methodologies, DOM architecture, and
+                  accessible user interfaces.
+                </p>
+              </article>
+
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Skilling</span>
+                <h3 class="cert-title">Front-End Web Development</h3>
+                <p class="cert-issuer">Reliance Foundation Skilling Academy</p>
+                <p class="cert-desc">
+                  Industry-ready digital skills, standards compliance, and
+                  responsive multi-device design.
+                </p>
+              </article>
+
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Full Stack</span>
+                <h3 class="cert-title">Full Stack Development MasterClass</h3>
+                <p class="cert-issuer">NoviTech R&D Private Limited</p>
+                <p class="cert-desc">
+                  End-to-end full-stack architectures, API integrations, and
+                  practical server-side concepts.
+                </p>
+              </article>
+
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Specialization</span>
+                <h3 class="cert-title">AI Tools Workshop Certificate</h3>
+                <p class="cert-issuer">Be10X</p>
+                <p class="cert-desc">
+                  Applied generative AI productivity tools, prompt workflows,
+                  and automated design techniques.
+                </p>
+              </article>
+
+              <article class="cert-card glass-panel">
+                <span class="cert-badge">Academic Honor</span>
+                <h3 class="cert-title">HSC & SSC Class Topper Award</h3>
+                <p class="cert-issuer">Prestige Public School & ACMV, Pune</p>
+                <p class="cert-desc">
+                  Awarded top rank in academic distinction with 87.50% (HSC) and
+                  85.60% (SSC).
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           9. CONTACT SECTION
+           ============================================================ -->
+        <section class="section contact-section" id="contact">
+          <div class="container">
+            <div class="section-title-wrap">
+              <span class="section-subtitle">COLLABORATION</span>
+              <h2 class="section-title">Let's Work Together</h2>
+            </div>
+
+            <div class="contact-grid">
+              <!-- Contact Context & Direct Links -->
+              <div class="contact-context glass-panel">
+                <h3 class="contact-heading">
+                  Have an idea or need a dedicated developer?
+                </h3>
+                <p class="contact-lead">
+                  I'm currently open for full-time frontend developer roles,
+                  contract opportunities, and creative web collaborations. Feel
+                  free to reach out directly:
+                </p>
+
+                <ul class="contact-channels">
+                  <li class="channel-item">
+                    <span class="channel-icon" aria-hidden="true">📍</span>
+                    <div>
+                      <span class="channel-label">Location</span>
+                      <span class="channel-value"
+                        >Pune, Maharashtra, India</span
+                      >
+                    </div>
+                  </li>
+                  <li class="channel-item">
+                    <span class="channel-icon" aria-hidden="true">✉️</span>
+                    <div>
+                      <span class="channel-label">Email</span>
+                      <a
+                        href="mailto:jatin20051112@gmail.com"
+                        class="channel-link"
+                        >jatin20051112@gmail.com</a
+                      >
+                    </div>
+                  </li>
+                  <li class="channel-item">
+                    <span class="channel-icon" aria-hidden="true">📞</span>
+                    <div>
+                      <span class="channel-label">Phone</span>
+                      <a href="tel:+919119586960" class="channel-link"
+                        >+91 9119586960</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="social-links-row">
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill"
+                    >LinkedIn</a
+                  >
+                  <a
+                    href="https://jj-portfolio-website.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill"
+                    >Live Portfolio</a
+                  >
+                </div>
+              </div>
+
+              <!-- Accessible Native Contact Form -->
+              <form
+                class="contact-form-card glass-panel"
+                action="#"
+                method="POST"
+              >
+                <h3 class="form-title">Send a Message</h3>
+
+                <div class="form-group">
+                  <label for="contact-name" class="form-label"
+                    >Full Name <span class="req">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Alex Morgan"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label"
+                    >Email Address <span class="req">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="e.g. alex@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="Project Inquiry / Job Opportunity"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label"
+                    >Message <span class="req">*</span></label
+                  >
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    rows="4"
+                    placeholder="Tell me about your project, timeline, and requirements..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  Send Message &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ============================================================
+         10. FOOTER
+         ============================================================ -->
+      <footer class="site-footer">
+        <div class="container footer-layout">
+          <div class="footer-brand">
+            <span class="monogram-box">JJ</span>
+            <span class="footer-name">Jatin Joshi</span>
+            <p class="footer-tagline">
+              Web Developer & App Developer crafting high-craft interactive web
+              solutions.
+            </p>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer Quick Links">
+            <ul class="footer-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-bottom-bar">
+            <p class="copyright-text">
+              &copy; 2026 Jatin Hemraj Joshi. All rights reserved.
+            </p>
+            <a
+              href="#home"
+              class="back-top-link"
+              aria-label="Back to top of the webpage"
+              >&uarr; Back to Top</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
