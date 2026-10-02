@@ -7,6 +7,8 @@ The project focuses on strong frontend fundamentals, semantic structure, respons
 
 The goal is to create a portfolio that feels like a **real-world professional developer website**, rather than a basic beginner HTML assignment. 🎨💻
 
+Project Live Deployed URL :- https://jj-portfolio-webpage.netlify.app/
+
 ---
 
 ## ✨ Project Overview
@@ -789,10 +791,10 @@ The project does **not** encourage fabricated:
 When information is unavailable, placeholders can be used:
 
 ```text
-[Your Email]
-[Your Location]
-[Project Name]
-[University Name]
+jatin20051112@gmail.com
+Pune, Maharashtra, India
+Portfolio Website
+Savitribai Phule Pune University 
 ```
 
 This makes the portfolio easy to customize without introducing misleading information.
@@ -806,7 +808,7 @@ Since this project uses only HTML5 and CSS3, no package installation or build pr
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/JatinJoshi-JJ/Portfolio-Webpage.git
 ```
 
 ### 2️⃣ Navigate to the project
